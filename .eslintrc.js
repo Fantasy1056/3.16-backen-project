@@ -16,6 +16,17 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'space-before-function-paren': 'off',
     'vue/multi-word-component-names': 'off',
-    'no-unused-vars': 'off'
+    'no-unused-vars': 'off',
+    camelcase: 'off'
+  },
+  globals: {
+    defineEmits: 'readonly',
+    defineProps: 'readonly',
+    defineExpose: 'readonly',
+    withDefaults: 'readonly',
+    WeixinJSBridge: 'readonly',
+    ElMessage: 'readonly',
+    ElMessageBox: 'readonly',
+    ElLoading: 'readonly'
   }
 }
